@@ -1,11 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Zero To Hero</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>CSS Zero To Hero <strong>STARTED!</strong></h1>
+  <a href="#title">zero to hero</a>
+  <h1>Advanced CSS Selectors</h1>
+
+  <!-- Adjacent Sibling Selector -->
+  <div class="adjacent-sibling-selector">
+    <h2><code>&lt;h2&gt;</code> with a tag <code>&lt;a&gt;</code> after it.</h2>
+    <a href="/">Hello I am an <code>&lt;a&gt;</code> tag!</a>
+    <hr>
+  </div>
+
+  <hr>
+
+  <!-- nth-of-type Selector -->
+  <div class="nth-of-type-selector">
+    <ul>
+      <li>Java</li>
+      <li>Python</li>
+      <li>C++</li>
+    </ul>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+    <ul>
+      <li>Node.JS</li>
+      <li>React.JS</li>
+      <li>Express</li>
+    </ul>
+    <ul>
+      <li>Fagner</li>
+      <li>May</li>
+      <li>Mel</li>
+    </ul>
+  </div>
+
+  <hr>
+  <!-- Direct Child Selector -->
+
+  <div class="direct-child-selector">
+    <div>
+      <span>A <code>&lt;span&gt;</code> inside the <code>&lt;div&gt;</code></span>
+      <p>A <code>&lt;p&gt;</code> only inside the <code>&lt;div&gt;</code>
+        <span>A <code>&lt;span&gt;</code> inside the <code>&lt;div&gt;</code> and inside
+          <code>&lt;p&gt;</code></span>
+      </p>
+    </div>
+    <span>A <code>&lt;span&gt;</code> not inside the <code>&lt;div&gt;</code></span>
+
+  </div>
+
+  <hr>
+  <!-- General Sibling Selector -->
+  <div class="general-sibling-selector">
+    <p>Coding is
+      <span>fun!</span>
+    </p>
+    <h1>GeeksforGeeks</h1>
+    <p>learn</p>
+    <span>Last span tag.</span>
+  </div>
+  <hr>
+  <!-- Decendant Selector -->
+  <div class="decendant-selector">
+    <ul>
+      <li>This is inside first li ement.</li>
+      <li>Coding is fun!</li>
+      <li>Bleeh...</li>
+      <li><a href="www.google.com">Click here to go to google.</a></li>
+      <li>The last li.</li>
+    </ul>
+  </div>
+  <hr>
+  <!-- Attribute Selector -->
+
+  <div class="attr-selector">
+    <a href="http://www.instagram.com" target="_blank">instagram.com</a><br>
+    <a href="http://www.google.com" target="_blank">google.com</a><br>
+    <a href="http://www.youtube.com" target="_blank">youtube.com</a><br>
+    <span class="first-span">First Span</span><br>
+    <span class="second-span">Second Span</span><br>
+    <span class="third-span">Third Span</span><br>
+    <span class="fourth-span special-span">Fourth and Special span</span><br>
+  </div>
+  <hr>
+
+  <!-- WebSite Zero To Hero -->
+  <h1 id="title">Zero To Hero</h1>
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas tempora assumenda ad, ipsam ipsum perferendis.
+  <h2 class="subtitle">About Me</h2>
+  <p class="para-text">
+    <span class="italic">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Quas, numquam earum laboriosam in dolorem possimus accusamus, laborum expedita beatae vitae aspernatur ratione! Eos eligendi dolorum facere illo fugit aperiam minima.
+  </p>
+
+  <div id="service-image"></div>
+  <div id="container">
+    <a href="www.google.com" id="text-manipulation">
+      go to google
+    </a>
+  </div>
 </body>
+
 </html>
